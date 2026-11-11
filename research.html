@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Research | Social Intelligence Lab</title>
-  <meta name="description" content="Research pillars of the Social Intelligence Lab: Group influence, social interactions & joint action, intentional control, and multimodal neuroscience." />
-  
+  <meta name="description"
+    content="Research pillars of the Social Intelligence Lab: Group influence, social interactions & joint action, intentional control, and multimodal neuroscience." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="icon" type="image/png" href="assets/images/logo.png" />
 </head>
+
 <body>
 
   <!-- STICKY HEADER -->
@@ -26,7 +31,7 @@
         </div>
       </a>
 
-      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">Menu</button>
 
       <nav class="nav-menu" aria-label="Main Navigation">
         <a href="index.html" class="nav-link">Home</a>
@@ -41,131 +46,569 @@
 
   <main id="main-content">
     <!-- HERO HEADER -->
-    <section class="section" style="padding: 3.5rem 0 2rem; background: var(--color-surface-subtle); border-bottom: 1px solid var(--color-border);">
+    <section class="section"
+      style="padding: 3.5rem 0 2rem; background: var(--background-alt); border-bottom: 1px solid var(--line);">
       <div class="container text-center">
         <span class="section-tag">Scientific Agenda</span>
         <h1 class="section-title">Research Pillars & Methods</h1>
-        <p class="section-subtitle" style="max-width: 700px; margin: 0 auto;">
-          Investigating the neural, computational, and behavioral mechanisms that support social adaptability, volition, and interaction.
+        <p class="section-subtitle" style="max-width: 700px;">
+          Investigating the neural, computational, and behavioral mechanisms that support social adaptability, volition,
+          and interaction.
         </p>
       </div>
     </section>
 
-    <!-- PILLAR 1 -->
-    <section class="section" id="group-influence">
+    <!-- RESEARCH THEMES (three pillars side by side) -->
+    <section class="section" id="themes">
       <div class="container">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center;">
-          <div>
-            <span class="section-tag">Pillar 01</span>
-            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Group Influences on Individual Behavior</h2>
-            <p style="font-size: 1.05rem; line-height: 1.65; margin-bottom: 1rem;">
-              Human choices and actions are constantly modulated by the presence and behaviors of others. This research program investigates how collective contexts shape individual autonomy and cognitive processing.
-            </p>
-            <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-muted); margin-bottom: 1.5rem;">
-              Key phenomena under investigation include:
-            </p>
-            <ul style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.95rem; color: var(--color-text-main); margin-bottom: 1.5rem;">
-              <li><strong>• Social and Motor Contagion:</strong> How involuntary mimicry and movement entrainment propagate across individuals and artificial avatars.</li>
-              <li><strong>• Conformity & Norm Adaptation:</strong> The cognitive and neural costs of conforming to consensus versus maintaining dissenting beliefs.</li>
-              <li><strong>• Sense of Agency in Groups:</strong> How diffusion of responsibility and crowd environments alter our subjective feeling of authorship over actions.</li>
-            </ul>
-          </div>
-          <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border);">
-            <img src="assets/images/projects/crowd.jpg" alt="Crowd behavior" style="width: 100%; height: auto; object-fit: cover;" />
-          </div>
+        <header class="section-header">
+          <span class="section-tag">Research Themes</span>
+          <h2 class="section-title">Three Pillars</h2>
+        </header>
+
+        <div class="research-grid">
+          <!-- Pillar 01 -->
+          <article class="research-card" id="group-influence">
+            <img src="assets/images/projects/crowd.jpg" alt="Crowd behavior" class="research-card-img" />
+            <div class="research-card-body">
+              <span class="research-card-tag">Pillar 01</span>
+              <h3 class="research-card-title">Group Influences on Individual Behavior</h3>
+              <p class="research-card-text">
+                Human choices and actions are constantly modulated by the presence and behaviors of others. This
+                research program investigates how collective contexts shape individual autonomy and cognitive
+                processing.
+              </p>
+              <ul class="research-card-list">
+                <li><strong>Social and Motor Contagion:</strong> How involuntary mimicry and movement entrainment
+                  propagate across individuals and artificial avatars.</li>
+                <li><strong>Conformity & Norm Adaptation:</strong> The cognitive and neural costs of conforming to
+                  consensus versus maintaining dissenting beliefs.</li>
+                <li><strong>Sense of Agency in Groups:</strong> How diffusion of responsibility and crowd environments
+                  alter our subjective feeling of authorship over actions.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Pillar 02 -->
+          <article class="research-card" id="social-interaction">
+            <img src="assets/images/projects/joint action_color.jpg" alt="Joint action" class="research-card-img" />
+            <div class="research-card-body">
+              <span class="research-card-tag">Pillar 02</span>
+              <h3 class="research-card-title">Social Interactions & Joint Action</h3>
+              <p class="research-card-text">
+                When two or more individuals interact, they form coupled social systems. We explore how brains, bodies,
+                and artificial agents coordinate seamlessly in real time.
+              </p>
+              <ul class="research-card-list">
+                <li><strong>Dyadic Kinematics & Synchrony:</strong> Sub-second movement adjustments, gesture dynamics,
+                  and interpersonal neural/physiological synchrony.</li>
+                <li><strong>Human-Artificial Agent Interaction:</strong> How humans interact with avatars, virtual
+                  agents, and robotic partners compared to fellow humans.</li>
+                <li><strong>Social Exclusion & Acceptance:</strong> The psychological and neural impact of ostracism on
+                  collaboration and perceptual sensitivity.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Pillar 03 -->
+          <article class="research-card" id="intentionality">
+            <img src="assets/images/projects/free will.png" alt="Free will and intentional control"
+              class="research-card-img" />
+            <div class="research-card-body">
+              <span class="research-card-tag">Pillar 03</span>
+              <h3 class="research-card-title">Intentional Control & Free Will</h3>
+              <p class="research-card-text">
+                Our work on intentionality and volition explores the fundamental limits and mechanisms of cognitive
+                control. Can humans choose freely, and what are the neural signatures of deciding to act or abort an
+                action?
+              </p>
+              <ul class="research-card-list">
+                <li><strong>Neuro-Cognitive Control:</strong> Prefrontal mechanisms supporting deliberate goal
+                  maintenance versus automatic response inhibition.</li>
+                <li><strong>High-Level Beliefs:</strong> How explicit philosophical or scientific beliefs regarding
+                  determinism and free will modulate moral behavior and punishment.</li>
+                <li><strong>Cross-Linguistic Moral Judgments:</strong> Exploring how concepts of willpower and choice
+                  vary across linguistic and cultural communities.</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- PILLAR 2 -->
-    <section class="section section-alt" id="social-interaction">
+    <!-- RESEARCH PROJECTS
+         To add a project: copy one <article class="project-card"> block below and edit it.
+         Tags: the first tag (tag-topic) is the research theme, the rest are topics and methods. -->
+    <section class="section section-alt" id="projects">
       <div class="container">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center;">
-          <div style="order: 2;">
-            <span class="section-tag">Pillar 02</span>
-            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Social Interactions & Joint Action</h2>
-            <p style="font-size: 1.05rem; line-height: 1.65; margin-bottom: 1rem;">
-              When two or more individuals interact, they form coupled social systems. We explore how brains, bodies, and artificial agents coordinate seamlessly in real time.
-            </p>
-            <ul style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.95rem; color: var(--color-text-main); margin-bottom: 1.5rem;">
-              <li><strong>• Dyadic Kinematics & Synchrony:</strong> Sub-second movement adjustments, gesture dynamics, and interpersonal neural/physiological synchrony.</li>
-              <li><strong>• Human-Artificial Agent Interaction:</strong> How humans interact with avatars, virtual agents, and robotic partners compared to fellow humans.</li>
-              <li><strong>• Social Exclusion & Acceptance:</strong> The psychological and neural impact of ostracism on collaboration and perceptual sensitivity.</li>
-            </ul>
-          </div>
-          <div style="order: 1; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border);">
-            <img src="assets/images/projects/joint action_color.jpg" alt="Joint action" style="width: 100%; height: auto; object-fit: cover;" />
-          </div>
+        <header class="section-header">
+          <span class="section-tag">Current Work</span>
+          <h2 class="section-title">Research Projects</h2>
+          <p class="section-subtitle">
+            Ongoing projects in the lab. Open a card to read more, or get in touch with the contact person.
+          </p>
+        </header>
+
+        <div class="project-grid">
+          <!-- Project: The Influence of Collective Street-Crossing on Pedestrians’ Sense of Agency -->
+          <article class="project-card">
+            <img src="assets/images/projects/SoA - Collective Behavior"
+              alt="The Influence of Collective Street-Crossing on Pedestrians’ Sense of Agency"
+              class="project-card-img" />
+            <div class="project-card-body">
+              <div class="project-tags">
+                <span class="tag tag-topic">Group Influences</span>
+                <span class="tag">Sense of Agency</span>
+                <span class="tag">Rule Compliance</span>
+                <span class="tag">Video Paradigm</span>
+              </div>
+              <h3 class="project-card-title">The Influence of Collective Street-Crossing on Pedestrians’ Sense of Agency
+              </h3>
+              <p class="project-card-contact"><strong>Contact:</strong> Ayse Sueda Nisanci</p>
+              <details class="project-card-details">
+                <summary>Read more</summary>
+                <p>In this project, we investigate how pedestrians' sense of agency varies in different traffic
+                  scenarios. We employ a video-based manipulation where participants can choose to either comply with
+                  traffic rules or engage in rule-breaking behavior. In each scenario, we manipulate the number of
+                  people crossing the street and examine its impact on participants' judgment of control over their
+                  avatars. Through this study, we aim to provide a better understanding of the cognitive processes
+                  underlying agency in rule compliance and collective rule-breaking contexts.</p>
+              </details>
+            </div>
+          </article>
+
+          <!-- Project: The Effect of Social Factors on Decision-Making Processes -->
+          <article class="project-card">
+            <video src="assets/images/projects/SciOI.mp4" class="project-card-img" autoplay muted loop
+              playsinline></video>
+            <div class="project-card-body">
+              <div class="project-tags">
+                <span class="tag tag-topic">Group Influences</span>
+                <span class="tag">Conformity</span>
+                <span class="tag">Virtual Reality</span>
+                <span class="tag">Virtual Agents</span>
+              </div>
+              <h3 class="project-card-title">The Effect of Social Factors on Decision-Making Processes</h3>
+              <p class="project-card-contact"><strong>Contact:</strong> Asieh Daneshi</p>
+              <details class="project-card-details">
+                <summary>Read more</summary>
+                <p>In this study, we explored the influence of social factors within 3d environments on decision-making
+                  processes. Participants engaged in a two-alternative forced choice (2AFC) task, where they were
+                  required to make decisions about visual stimuli. Alongside the participants, some virtual agents
+                  (avatars) also made the same decisions. Our primary focus was to investigate how the size and density
+                  of the group of virtual agent impacts the participants' choices. The findings reveal significant
+                  insights into social conformity and decision-making in VR, highlighting how larger and denser groups
+                  of virtual agents can sway individual decisions.</p>
+              </details>
+            </div>
+          </article>
+
+          <!-- Project: The Effect of Group on Risk-Taking Behavior of Individuals -->
+          <article class="project-card">
+            <video src="assets/images/projects/risk_taking_short.mp4" class="project-card-img" autoplay muted loop
+              playsinline></video>
+            <div class="project-card-body">
+              <div class="project-tags">
+                <span class="tag tag-topic">Group Influences</span>
+                <span class="tag">Risk-Taking</span>
+                <span class="tag">Conformity</span>
+                <span class="tag">Decision-Making</span>
+              </div>
+              <h3 class="project-card-title">The Effect of Group on Risk-Taking Behavior of Individuals</h3>
+              <p class="project-card-contact"><strong>Contact:</strong> Asieh Daneshi</p>
+              <details class="project-card-details">
+                <summary>Read more</summary>
+                <p>In this study, we explored the dynamics of decision-making and risk-taking within social contexts and
+                  how everyday decisions, often laden with potential negative outcomes, are influenced not only by
+                  individual judgment but significantly by the surrounding social environment. By observing how
+                  individuals in a group adapt their decisions based on others’ actions and outcomes, we aim to
+                  understand the balancing act between individual decision-making and group conformity. This research
+                  explores decision-making in a constantly changing social environment, offering new insights into how
+                  group dynamics can lead to either more risk-taking or conservative behaviors.</p>
+              </details>
+            </div>
+          </article>
+
+          <!-- Project: Gender and Agency -->
+          <article class="project-card">
+            <img src="assets/images/projects/fem6.gif" alt="Gender and Agency" class="project-card-img" />
+            <div class="project-card-body">
+              <div class="project-tags">
+                <span class="tag tag-topic">Social Interaction</span>
+                <span class="tag">Sense of Agency</span>
+                <span class="tag">Gender</span>
+                <span class="tag">Intentional Binding</span>
+                <span class="tag">Online Experiments</span>
+              </div>
+              <h3 class="project-card-title">Gender and Agency</h3>
+              <p class="project-card-contact"><strong>Contact:</strong> Sabine Bou Saba</p>
+              <details class="project-card-details">
+                <summary>Read more</summary>
+                <p>For the Gender and Perceived Agency project, we aim to address the following question: How does
+                  gender influence the sense and perception of low-level agency? To do so, we will run a series of
+                  online and off-line experiments using novel methods inspired by the intentional binding paradigm, to
+                  both measure low-level agency and manipulate gender in a linear manner.</p>
+              </details>
+            </div>
+          </article>
+
+          <!-- Project: The Impact of Gaze in Social Exclusion -->
+          <article class="project-card">
+            <video src="assets/images/projects/ExclusionExplicit.mov" class="project-card-img" autoplay muted loop
+              playsinline></video>
+            <div class="project-card-body">
+              <div class="project-tags">
+                <span class="tag tag-topic">Social Interaction</span>
+                <span class="tag">Social Exclusion</span>
+                <span class="tag">Gaze</span>
+                <span class="tag">Cyberball</span>
+              </div>
+              <h3 class="project-card-title">The Impact of Gaze in Social Exclusion</h3>
+              <p class="project-card-contact"><strong>Contact:</strong> Martha Luk</p>
+              <details class="project-card-details">
+                <summary>Read more</summary>
+                <p>Social exclusion involves isolating an individual from a social group, causing an immediate reflexive
+                  pain and emotional distress due to the threatened fundamental human need to belong. The minimal
+                  acknowledgement hypothesis argues even the most minimal inclusionary or hostile existential cues
+                  signaling acknowledgement can reduce the sting of exclusion. This project aims to explore if the
+                  Cyberball task shows a decreased ostracism-related effect when exclusion is explicit, i.e.,
+                  acknowledgement of presence is conveyed through gaze.</p>
+              </details>
+            </div>
+          </article>
+
+          <!-- Project: Learning New Actions from Observing Others Across Development -->
+          <article class="project-card">
+            <img src="assets/images/projects/observational_learning.jpg"
+              alt="Learning New Actions from Observing Others Across Development" class="project-card-img" />
+            <div class="project-card-body">
+              <div class="project-tags">
+                <span class="tag tag-topic">Social Interaction</span>
+                <span class="tag">Observational Learning</span>
+                <span class="tag">Development</span>
+                <span class="tag">Computational Modeling</span>
+              </div>
+              <h3 class="project-card-title">Learning New Actions from Observing Others Across Development</h3>
+              <p class="project-card-contact"><strong>Contact:</strong> Julia M. Rodriguez Buritica</p>
+              <details class="project-card-details">
+                <summary>Read more</summary>
+                <p>Learning from observing others actions and outcomes (observational learning) has a major evolutionary
+                  advantage as it allows a rapid acquisition of new actions and has been found in various intelligent
+                  species, including humans. The developmental mechanism underlying learning from observed actions are
+                  not understood. Recent studies in adults have started to investigate individual action learning from a
+                  neurocomputational perspective. Here, reward-based learning through prediction errors (the difference
+                  between expected and received action-outcomes) seems to be crucial for learning new actions. The
+                  current project aims to describe neural and behavioral associations related to developmental
+                  differences in observational action learning using a computational approach.</p>
+              </details>
+            </div>
+          </article>
+
+          <!-- Project: Learning Processes and Memory Effects Across Development -->
+          <article class="project-card">
+            <img src="assets/images/projects/Maria_learning.png"
+              alt="Learning Processes and Memory Effects Across Development" class="project-card-img" />
+            <div class="project-card-body">
+              <div class="project-tags">
+                <span class="tag tag-topic">Social Interaction</span>
+                <span class="tag">Memory</span>
+                <span class="tag">Development</span>
+                <span class="tag">EEG</span>
+                <span class="tag">Computational Modeling</span>
+              </div>
+              <h3 class="project-card-title">Learning Processes and Memory Effects Across Development</h3>
+              <p class="project-card-contact"><strong>Contact:</strong> Maria Woitow</p>
+              <details class="project-card-details">
+                <summary>Read more</summary>
+                <p>We learn and form memories based on our own experiences (experiential learning) and through
+                  observation of others’ behavior (observational learning). While experiential learning has often been
+                  assumed to lead to better memory than observational learning, the latter is especially relevant from a
+                  developmental perspective as it is central to cognitive and social-emotional development and provides
+                  the basis for successful education. Recent neuroscientific and computational studies suggest similar
+                  processes underlying memory formation during experiential and observational learning. Using a
+                  neurocomputational approach would help to understand the underlying mechanisms and thus could aid in
+                  answering the question of how both learning types affect subsequent memory. In this project, we
+                  investigate the neurocomputational processes underlying experiential vs. observational learning and
+                  their impact on memory across development by combining behavioral and neural measures (EEG) with
+                  computational modeling.</p>
+              </details>
+            </div>
+          </article>
+
+          <!-- Project: Psychomotor Retardation and the Discrimination of Dance Movement Kinematics -->
+          <article class="project-card">
+            <img src="assets/images/projects/dance_kinematics.png"
+              alt="Psychomotor Retardation and the Discrimination of Dance Movement Kinematics"
+              class="project-card-img" />
+            <div class="project-card-body">
+              <div class="project-tags">
+                <span class="tag tag-topic">Social Interaction</span>
+                <span class="tag">Movement Perception</span>
+                <span class="tag">Depression</span>
+                <span class="tag">Motion Capture</span>
+                <span class="tag">Online Experiments</span>
+              </div>
+              <h3 class="project-card-title">Psychomotor Retardation and the Discrimination of Dance Movement Kinematics
+              </h3>
+              <p class="project-card-contact"><strong>Contact:</strong> Mia Ihaksi</p>
+              <details class="project-card-details">
+                <summary>Read more</summary>
+                <p>Psychomotor retardation (PMR) in major depressive disorder can manifest in a range of motor and
+                  cognitive functions, such as slowed movement, slowed speech, or reduced facial expressions. In the
+                  current project, we investigate whether PMR also affects perception, specifically whether individuals
+                  with PMR are less sensitive to differences in the kinematic features of other people's movements. We
+                  use dance as our stimulus because it allows us to minimize the functional and social context, enabling
+                  participants to perceive movement primarily through its kinematic properties. We generate point-light
+                  displays from motion capture recordings manipulating only velocity and acceleration across matched
+                  pairs of choreographic sequences. Depressed participants with and without PMR complete an online
+                  discrimination task that measures their sensitivity to dance movement kinematics.</p>
+              </details>
+            </div>
+          </article>
+
+          <!-- Project: Free Will Belief in Virtual Reality -->
+          <article class="project-card">
+            <img src="assets/images/projects/Free _Will_Belief_in_Virtual_Reality_Setting.webp"
+              alt="Free Will Belief in Virtual Reality" class="project-card-img" />
+            <div class="project-card-body">
+              <div class="project-tags">
+                <span class="tag tag-topic">Intentional Control</span>
+                <span class="tag">Free Will Belief</span>
+                <span class="tag">Sense of Agency</span>
+                <span class="tag">Virtual Reality</span>
+              </div>
+              <h3 class="project-card-title">Free Will Belief in Virtual Reality</h3>
+              <p class="project-card-contact"><strong>Contact:</strong> Nel Tavernier</p>
+              <details class="project-card-details">
+                <summary>Read more</summary>
+                <p>For the past 15 years, there has already been quite some research within social and cognitive
+                  psychology experimentally inducing disbelief in free will and assessing its impact on behavior and
+                  cognition. In these studies, a text or video based manipulation was used, claiming that free will does
+                  not exist. More recently, a number of replication studies using these classical free will belief
+                  manipulations have failed to find an impact on downstream processes. Therefore, in this project, we
+                  would like to tap into a more immersive manipulation of these beliefs, creating a Virtual Reality
+                  experience where participants question the sense of agency they have over their actions, and see what
+                  impact this could have on their subjective belief in free will.</p>
+              </details>
+            </div>
+          </article>
+
+          <!-- Project: Free Will Belief in Narrative -->
+          <article class="project-card">
+            <img src="assets/images/projects/Dalit_project1.jpg" alt="Free Will Belief in Narrative"
+              class="project-card-img" />
+            <div class="project-card-body">
+              <div class="project-tags">
+                <span class="tag tag-topic">Intentional Control</span>
+                <span class="tag">Free Will Belief</span>
+                <span class="tag">Guided Narrative Imagery</span>
+                <span class="tag">Virtual Reality</span>
+              </div>
+              <h3 class="project-card-title">Free Will Belief in Narrative</h3>
+              <p class="project-card-contact"><strong>Contact:</strong> Dalit Milshtein</p>
+              <details class="project-card-details">
+                <summary>Read more</summary>
+                <p>Free will belief (FWB) has long been seen as an essential aspect of human society, both in individual
+                  and social behavior. While the answer to the question "Do we have free will?" is best found in
+                  philosophical discourse, the belief in free will and its effect on human behavior may be
+                  scientifically researched from a cognitive standpoint. However, present approaches for manipulating
+                  FWB are mostly focused on abstract arguments against free will and lack the motivating and emotional
+                  components required for belief transformation. In the current project we are developing a novel method
+                  for manipulating and studying FWBs. The new method is based on cultural practices like storytelling,
+                  role-playing, or theater, as well as clinical study procedures (i.e., narrative guided imagery, CBT).
+                  These approaches demonstrated that humans can be easily assimilated into imagined possible worlds, and
+                  that temporary assimilation in an alternate reality can be used to encourage them to accept an
+                  entirely different belief system. As a result, we create emotional narratives that are meaningful to
+                  the participants and lengthy enough to allow involvement into the storyline. These narratives serve as
+                  the foundation for the interactive guided narrative imagery (GNI) task, which is developing in both PC
+                  and virtual reality versions.</p>
+              </details>
+            </div>
+          </article>
+
+          <!-- Project: Voluntary Control Over the Internal Body -->
+          <article class="project-card">
+            <img src="assets/images/projects/Interoaction2.webp" alt="Voluntary Control Over the Internal Body"
+              class="project-card-img" />
+            <div class="project-card-body">
+              <div class="project-tags">
+                <span class="tag tag-topic">Intentional Control</span>
+                <span class="tag">Interoception</span>
+                <span class="tag">Ideomotor Theory</span>
+                <span class="tag">Biofeedback</span>
+              </div>
+              <h3 class="project-card-title">Voluntary Control Over the Internal Body</h3>
+              <p class="project-card-contact"><strong>Contact:</strong> Sam Verschooren</p>
+              <details class="project-card-details">
+                <summary>Read more</summary>
+                <p>We are experts in learning fine-grained voluntary somatomotor control, for example when manipulating
+                  tiny objects. Ideomotor theory states that we control these movements by anticipating their sensory
+                  consequences (e.g., visual feedback of an arm movement). Voluntarily controlling visceromotor actions
+                  inside the body, such as decreasing heart rate, is much more difficult, but it is currently not clear
+                  why this is the case. We propose the ideomotor hypothesis of voluntary visceromotor control, which
+                  states that this type of control is governed by the anticipation of sensory (interoceptive) feedback
+                  that is of lower sensory quality. We test this hypothesis using autogenic and biofeedback training. If
+                  confirmed, the ideomotor hypothesis can be used to push the naturally occurring boundaries of this
+                  voluntary control, which has several clinical applications.</p>
+              </details>
+            </div>
+          </article>
+
+          <!-- Project: Decision Models in Intentional Action -->
+          <article class="project-card">
+            <img src="assets/images/projects/Free_Will_Libet.webp" alt="Decision Models in Intentional Action"
+              class="project-card-img" />
+            <div class="project-card-body">
+              <div class="project-tags">
+                <span class="tag tag-topic">Intentional Control</span>
+                <span class="tag">Volition</span>
+                <span class="tag">Libet Paradigm</span>
+                <span class="tag">Neuroimaging</span>
+              </div>
+              <h3 class="project-card-title">Decision Models in Intentional Action</h3>
+              <p class="project-card-contact"><strong>Contact:</strong> Yu Hei Shum</p>
+              <details class="project-card-details">
+                <summary>Read more</summary>
+                <p>Traditional interpretation of the results in the Libet-style experiments has challenged the existence
+                  of free will. Responding to this challenge, there are recent decision models suggesting alternative
+                  interpretations to those results. The current project aims at testing the validity of these models
+                  with the integration of behavioral and neuroimaging approaches. By validating these models, it would
+                  enrich our understanding to the psychological and neural mechanism behind volition, as well as
+                  providing hints to resolve the debate about free will in cognitive neuroscience and philosophy.</p>
+              </details>
+            </div>
+          </article>
+
+          <!-- Project: Actor Observer Bias in Moral Responsibility -->
+          <article class="project-card">
+            <img src="assets/images/projects/Actor_Observer_Bias_in_Moral_Responsibility.webp"
+              alt="Actor Observer Bias in Moral Responsibility" class="project-card-img" />
+            <div class="project-card-body">
+              <div class="project-tags">
+                <span class="tag tag-topic">Intentional Control</span>
+                <span class="tag">Moral Responsibility</span>
+                <span class="tag">Free Will Belief</span>
+                <span class="tag">Vignettes</span>
+              </div>
+              <h3 class="project-card-title">Actor Observer Bias in Moral Responsibility</h3>
+              <p class="project-card-contact"><strong>Contact:</strong> Jurena Wille</p>
+              <details class="project-card-details">
+                <summary>Read more</summary>
+                <p>For four different vignette scenarios, each describing morally relevant interpersonal actions, we
+                  compare causal inferences and responsibility attributions in the context of the Actor Observer Bias.
+                  We want to explore if participants judge the reasons and responsibilities for their own actions
+                  differently than other persons´ actions and whether this effect depends on the participants´ Free Will
+                  Beliefs.</p>
+              </details>
+            </div>
+          </article>
+
+          <!-- Project: Implicit Measures of Intention -->
+          <article class="project-card">
+            <img src="assets/images/projects/Libet_clock_VR.png" alt="Implicit Measures of Intention"
+              class="project-card-img" />
+            <div class="project-card-body">
+              <div class="project-tags">
+                <span class="tag tag-topic">Intentional Control</span>
+                <span class="tag">Intention</span>
+                <span class="tag">Pupillometry</span>
+                <span class="tag">Neural Signals</span>
+                <span class="tag">Virtual Reality</span>
+              </div>
+              <h3 class="project-card-title">Implicit Measures of Intention</h3>
+              <p class="project-card-contact"><strong>Contact:</strong> Yu Hei Shum & Tomaso Zanardi</p>
+              <details class="project-card-details">
+                <summary>Read more</summary>
+                <p>Measure of intention is one of the necessary elements in studies about intentional action. Previous
+                  studies have suggested that self-reported measures of intention can be manipulated after the action
+                  has been performed. In order to achieve a better measure in intention, we are now establishing the
+                  implicit measure of intention via biological markers, such as neural signal and pupil dilation.</p>
+              </details>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- PILLAR 3 -->
-    <section class="section" id="intentionality">
-      <div class="container">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center;">
-          <div>
-            <span class="section-tag">Pillar 03</span>
-            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Intentional Control & Free Will</h2>
-            <p style="font-size: 1.05rem; line-height: 1.65; margin-bottom: 1rem;">
-              Our work on intentionality and volition explores the fundamental limits and mechanisms of cognitive control. Can humans choose freely, and what are the neural signatures of deciding to act or abort an action?
-            </p>
-            <ul style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.95rem; color: var(--color-text-main); margin-bottom: 1.5rem;">
-              <li><strong>• Neuro-Cognitive Control:</strong> Prefrontal mechanisms supporting deliberate goal maintenance versus automatic response inhibition.</li>
-              <li><strong>• High-Level Beliefs:</strong> How explicit philosophical or scientific beliefs regarding determinism and free will modulate moral behavior and punishment.</li>
-              <li><strong>• Cross-Linguistic Moral Judgments:</strong> Exploring how concepts of willpower and choice vary across linguistic and cultural communities.</li>
-            </ul>
-          </div>
-          <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border);">
-            <img src="assets/images/projects/free will.png" alt="Free Will and Intentional Control" style="width: 100%; height: auto; object-fit: cover;" />
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- METHODS & PARADIGMS -->
-    <section class="section section-alt" id="methods">
+    <section class="section" id="methods">
       <div class="container">
         <header class="section-header">
           <span class="section-tag">Methodology</span>
           <h2 class="section-title">Experimental Paradigms & Tools</h2>
           <p class="section-subtitle">
-            We leverage a comprehensive suite of neuroimaging, computational, and immersive technologies.
+            We combine behavioral, physiological, neural, and immersive methods to study social behavior.
           </p>
         </header>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
-          <div style="background: #fff; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
-            <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">🥽</div>
-            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Virtual Reality (VR)</h3>
-            <p style="font-size: 0.9rem; color: var(--color-text-muted);">
-              Fully immersive interactive environments with controlled social avatars, allowing precise manipulation of visual cues and proxemics.
-            </p>
-          </div>
+        <!-- To add a method: copy one <article> block below. Images live in assets/images/methods/ -->
+        <div class="research-grid methods-grid">
+          <!-- Method: Motion Capture -->
+          <article class="research-card">
+            <img src="assets/images/methods/Motion_capture.png" alt="Motion Capture" class="research-card-img" />
+            <div class="research-card-body">
+              <h3 class="research-card-title">Motion Capture</h3>
+              <p class="research-card-text">
+                Optical motion tracking of the whole body to record the timing and kinematics of movements, for example during joint action, imitation, or dance.
+              </p>
+            </div>
+          </article>
 
-          <div style="background: #fff; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
-            <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">⚡</div>
-            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">EEG & Hyperscanning</h3>
-            <p style="font-size: 0.9rem; color: var(--color-text-muted);">
-              High temporal-resolution electroencephalography to capture readiness potentials, event-related dynamics, and inter-brain coupling.
-            </p>
-          </div>
+          <!-- Method: Virtual Reality (VR) -->
+          <article class="research-card">
+            <img src="assets/images/methods/VR_Hei.jpg" alt="Virtual Reality (VR)" class="research-card-img" />
+            <div class="research-card-body">
+              <h3 class="research-card-title">Virtual Reality (VR)</h3>
+              <p class="research-card-text">
+                Fully immersive, interactive environments with controlled social avatars, allowing precise manipulation of visual cues, group size, and proxemics.
+              </p>
+            </div>
+          </article>
 
-          <div style="background: #fff; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
-            <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">👁️</div>
-            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Eye-Tracking & Pupillometry</h3>
-            <p style="font-size: 0.9rem; color: var(--color-text-muted);">
-              Wearable and screen-based gaze tracking to quantify joint attention, visual search, and autonomic arousal in interaction.
-            </p>
-          </div>
+          <!-- Method: Electroencephalogram (EEG) -->
+          <article class="research-card">
+            <img src="assets/images/methods/EEG.png" alt="Electroencephalogram (EEG)" class="research-card-img" />
+            <div class="research-card-body">
+              <h3 class="research-card-title">Electroencephalogram (EEG)</h3>
+              <p class="research-card-text">
+                High temporal-resolution recordings of brain activity to capture readiness potentials, event-related dynamics, and learning-related neural signals.
+              </p>
+            </div>
+          </article>
 
-          <div style="background: #fff; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
-            <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">🔬</div>
-            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">fMRI & Neural Imaging</h3>
-            <p style="font-size: 0.9rem; color: var(--color-text-muted);">
-              Functional magnetic resonance imaging to resolve localized prefrontal and subcortical networks underlying social decisions.
-            </p>
-          </div>
+          <!-- Method: Eye-Tracking -->
+          <article class="research-card">
+            <img src="assets/images/methods/Eye_tracking.jpg" alt="Eye-Tracking" class="research-card-img" />
+            <div class="research-card-body">
+              <h3 class="research-card-title">Eye-Tracking</h3>
+              <p class="research-card-text">
+                Wearable and screen-based gaze tracking and pupillometry to quantify joint attention, visual search, and arousal during social interaction.
+              </p>
+            </div>
+          </article>
+
+          <!-- Method: Interoceptive Measures -->
+          <article class="research-card">
+            <img src="assets/images/methods/ECG.png" alt="Interoceptive Measures" class="research-card-img" />
+            <div class="research-card-body">
+              <h3 class="research-card-title">Interoceptive Measures</h3>
+              <p class="research-card-text">
+                Heart activity (ECG) and other bodily signals to study how we perceive and voluntarily control the internal states of our body.
+              </p>
+            </div>
+          </article>
+
+          <!-- Method: Online Experiments -->
+          <article class="research-card">
+            <img src="assets/images/methods/Online_Experiment.webp" alt="Online Experiments" class="research-card-img" />
+            <div class="research-card-body">
+              <h3 class="research-card-title">Online Experiments</h3>
+              <p class="research-card-text">
+                Web-based studies that let us test large and diverse samples on perception, decision-making, agency, and moral judgments.
+              </p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -181,7 +624,8 @@
             <span class="footer-brand-title">Social Intelligence Lab</span>
           </div>
           <p class="footer-brand-desc">
-            Einstein Strategic Professorship for Social Intelligence at the Berlin School of Mind and Brain and Humboldt-Universität zu Berlin.
+            Einstein Strategic Professorship for Social Intelligence at the Berlin School of Mind and Brain and
+            Humboldt-Universität zu Berlin.
           </p>
         </div>
 
@@ -199,10 +643,12 @@
         <div class="footer-col">
           <h4>Affiliations</h4>
           <div class="footer-links">
-            <a href="https://www.hu-berlin.de/" target="_blank" rel="noopener noreferrer">Humboldt-Universität zu Berlin</a>
-            <a href="https://www.mind-and-brain.de/" target="_blank" rel="noopener noreferrer">Berlin School of Mind and Brain</a>
-            <a href="https://www.scienceofintelligence.de/" target="_blank" rel="noopener noreferrer">Science of Intelligence (SCIoI)</a>
-            <a href="https://envisionbox.org/" target="_blank" rel="noopener noreferrer">EnvisionBOX.org</a>
+            <a href="https://www.hu-berlin.de/" target="_blank" rel="noopener noreferrer">Humboldt-Universität zu
+              Berlin</a>
+            <a href="https://www.mind-and-brain.de/" target="_blank" rel="noopener noreferrer">Berlin School of Mind and
+              Brain</a>
+            <a href="https://www.scienceofintelligence.de/" target="_blank" rel="noopener noreferrer">Science of
+              Intelligence (SCIoI)</a>
           </div>
         </div>
 
@@ -212,7 +658,8 @@
             <span>Luisenstraße 56, Haus 5</span>
             <span>10115 Berlin, Germany</span>
             <a href="mailto:mbsocint@hu-berlin.de">mbsocint@hu-berlin.de</a>
-            <a href="https://github.com/Social-intelligence-group" target="_blank" rel="noopener noreferrer">GitHub Group ↗</a>
+            <a href="https://github.com/Social-intelligence-group" target="_blank" rel="noopener noreferrer">GitHub
+              Group ↗</a>
           </div>
         </div>
       </div>
@@ -226,4 +673,5 @@
 
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>
